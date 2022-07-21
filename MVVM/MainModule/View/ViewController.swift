@@ -32,5 +32,8 @@ class ViewController: UIViewController {
     @IBAction func startFetch(_ sender: Any) {
         viewModel.startFetch()
     }
+    @IBAction func errorTap(_ sender: Any) {
+        viewModel.error()
+    }
 }
 

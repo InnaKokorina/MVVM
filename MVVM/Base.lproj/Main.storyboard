@@ -17,18 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkI-eI-0pS">
-                                <rect key="frame" x="161.5" y="737" width="91" height="31"/>
+                                <rect key="frame" x="75" y="737" width="78.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="start fetch"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Success"/>
                                 <connections>
                                     <action selector="startFetch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vw2-zW-37O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y3-Sn-hlb">
+                                <rect key="frame" x="284" y="737" width="56" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Error"/>
+                                <connections>
+                                    <action selector="errorTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7He-kH-oD0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IkI-eI-0pS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n0K-0h-p7u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Y3-Sn-hlb" secondAttribute="trailing" constant="74" id="HQy-oS-aYN"/>
+                            <constraint firstItem="IkI-eI-0pS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="kKb-eU-WqG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Y3-Sn-hlb" secondAttribute="bottom" constant="94" id="orq-IM-wla"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IkI-eI-0pS" secondAttribute="bottom" constant="94" id="rMK-SJ-Hzk"/>
                         </constraints>
                     </view>
